@@ -1,0 +1,46 @@
+.message_wrapper{
+    margin-top: 5px;
+    padding: 0px 5px;
+}
+
+
+.message_wrapper img{
+    width: 100%;
+    border-radius: 5px;
+}
+.message_wrapper p{
+    padding: 10px;
+    display: 10px;
+    max-width: 50%;
+    display: inline-block;
+    text-align: left;
+    border-radius: 5px;
+
+}
+
+
+.message_wrapper small{
+    display: inline-block;
+    margin-top: 15px;
+    opacity: 0.8;
+
+}
+
+
+.message_wrapper.own{
+    text-align: right;
+
+}
+
+.me{
+    background: var(--color-5);
+    color: black;
+    font-weight: bold;
+}
+
+
+.friend{
+    background: var(--color-2);
+    color: black;
+    font-weight: bold;
+}

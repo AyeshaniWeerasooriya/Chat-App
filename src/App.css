@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+:root{
+    --color-1: black;
+    --color-2: white;
+    --color-3: rgb(48, 236, 92);
+    --color-4: rgb(33, 172, 11);
+    --color-5: rgb(109, 166, 79);
+    --color-6: rgb(169, 220, 138);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@media screen and (max-width: 767px){
+    .home_container{
+
+     
+        grid-template-columns: 2fr 3fr;
+       
+    }
+    .message_form{
+
+        left: 3%;
+        right: 0;
+        bottom: 5px;
+     
+    }
+
+    .message_wrapper p{
+        
+        max-width: 75%;
+        
+    
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 576px){
+    .home_container{
+
+     
+        grid-template-columns: 1fr 5fr;
+       
+    }
+
+    .user_wrapper{
+       display: none;
+    }
+
+    .sm_container{
+        padding: 10px 0px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .sm_screen{
+        display: inline-block;
+    }
+
+    .message_form input{
+        width: 50vw;
+        margin: 0px 10px;
+    }
+    .message_form.btn{
+        margin: 0px ;
+    }
+
+    .message_wrapper p{
+        max-width: 100%;
+    }
 }
